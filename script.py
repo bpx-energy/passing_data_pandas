@@ -5,7 +5,7 @@ import sklearn as sklearn
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 
-my_dataset = pd.read_csv(‘data/my_dataset.csv’, skiprows=1, low_memory=False)
+my_dataset = pd.read_csv(‘data/msd.csv’, skiprows=1, low_memory=False)
 my_dataset = my_dataset.drop([‘url’], axis=1)
 my_dataset = my_dataset.dropna(thresh=half_count, axis=1)
 X = dataset.iloc[:, :-1].values
